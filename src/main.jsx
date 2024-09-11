@@ -9,7 +9,7 @@ import './index.css'
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/Boima12.github.io/">
+    <BrowserRouter>
       <Routes>
 
         <Route path="/" element={<App />} />

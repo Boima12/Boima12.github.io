@@ -19,6 +19,7 @@ function Co_Alpha() {
             <div className={styles.section_Body}>
                 <Co_Node nodeTitle="2D Farming"
                     nodeDescription="A farming game, made within 1 day, inspired by untitled farming game by _create on Roblox"
+                    nodeDescriptionColor="#4b7299"
                     nodeIconPath={p1}
                     nodeLink="https://github.com/Boima12/2D_Farming.git"
                 />

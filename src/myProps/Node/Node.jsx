@@ -10,6 +10,11 @@ function Co_Node(props) {
     }
 
 
+    const titlestyle = {
+        color: `${props.nodeDescriptionColor}`
+    }
+
+
     return(
         <a href={props.nodeLink}>
             <div className={styles.main}>
@@ -19,7 +24,7 @@ function Co_Node(props) {
                 <p>{props.nodeTitle}</p>
 
                 <div className={styles.nodeDescription}>
-                    <p>{props.nodeDescription}</p>
+                    <p style={titlestyle}>{props.nodeDescription}</p>
                 </div>
 
             </div>
@@ -35,12 +40,14 @@ Co_Node.propTypes = {
     nodeIconPath: PropTypes.string,
     nodeTitle: PropTypes.string,
     nodeDescription: PropTypes.string,
+    nodeDescriptionColor: PropTypes.string,
 }
 
 
 
 Co_Node.defaultProps = {
     nodeLink: "#",
+    nodeDescriptionColor: "#000",
 }
 
 
