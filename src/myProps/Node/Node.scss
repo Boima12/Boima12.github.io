@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Inter';
+
+    src: url('../../assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+
+
+
+div.main {
+    position: relative;
+
+    width: 270px;
+    height: 300px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #D9D9D9;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    // outline: 1px solid green;
+}
+
+
+div.main div.nodeIcon {
+    width: 85%;
+    height: 65%;
+    margin-top: 10px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    background: #E7E7E7;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+div.main p {
+    /* width: 90%; */
+
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+div.main div.nodeDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(-37%);
+    
+    border-radius: 10px;
+    opacity: 0;
+    backdrop-filter: blur(20px);
+
+    z-index: 2;
+
+    transition: all 0.7s ease;
+}
+
+
+div.main div.nodeDescription p {
+    padding: 0 10px 0 60px;
+
+    color: #000;
+    text-align: left;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+/* Transition */
+div.main:hover {
+    div.nodeDescription {
+        opacity: 1;
+        transform: translateX(-19%);
+    }
+}
+/* End Transition */
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    div.main {
+        width: 200px;
+        height: 230px;
+    }
+
+    
+    div.main p {
+        font-size: 16px;
+    }
+
+
+    div.main div.nodeDescription p {
+        font-size: 12px;
+        padding: 0 10px 0 50px;
+    }
+}
+
+
+
+

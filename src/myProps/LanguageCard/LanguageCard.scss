@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Inter';
+
+    src: url('../../assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+
+
+
+
+div.LanguageCard {
+    width: 400px;
+    height: 450px;
+    flex-shrink: 0;
+
+    border-radius: 27px;
+    background: #D9D9D9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+div.LanguageCard div.bgImage {
+    width: 85%;
+    height: 77%;
+    flex-shrink: 0;
+
+    margin-top: 30px;
+
+    border-radius: 19px;
+    background: #FFF;
+
+    // background-image: url('../assets/Images/kotlinimg.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 40% 35%;
+
+
+    z-index: 2;
+
+    transition: all 0.5s ease;
+}
+
+
+div.LanguageCard p {
+    margin-top: -85px;
+
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    z-index: 1;
+    opacity: 0;
+
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+/* Transition */
+div.LanguageCard:hover {
+    
+    div.bgImage {
+        transform: translateY(-40px);
+    }
+
+    p {
+        transform: translateY(45px);
+        opacity: 1;
+    }
+}
+
+
+/* End Transition */
+
+
+
+
+
+/* Extra small devices (phones, below 600px) (also design this part with 350px) */
+@media only screen and (min-width: 350px) and (max-width: 1200px) {
+    div.LanguageCard {
+        width: 250px;
+        height: 320px;
+    
+        border-radius: 27px;
+    
+        gap: 30px;
+    }
+
+
+    div.LanguageCard div.bgImage {
+        width: 85%;
+        height: 70%;
+        margin-top: 0;
+    
+        border-radius: 19px;
+    
+        z-index: 2;
+    
+        transition: none;
+    }
+
+
+    div.LanguageCard:hover {
+    
+        div.bgImage {
+            transform: none;
+        }
+    
+        p {
+            transform: none;
+        }
+    }
+
+
+    div.LanguageCard p {
+        margin-top: 0;
+        margin-bottom: 0px;
+    
+        font-size: 22px;
+        opacity: 1;
+    
+        transition: none;
+    }
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    div.LanguageCard {
+        width: 300px;
+        height: 370px;
+    }
+
+
+    div.LanguageCard p {    
+        font-size: 26px;
+    }
+} 
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    div.LanguageCard {
+        width: 400px;
+        height: 450px;
+    
+        border-radius: 27px;
+    }
+
+
+    div.LanguageCard div.bgImage {
+        width: 85%;
+        height: 77%;
+    }
+
+
+    div.LanguageCard p {    
+        font-size: 32px;
+    }
+} 
+
+
+
+
+
