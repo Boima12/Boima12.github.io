@@ -26,13 +26,6 @@ function Co_Alpha() {
                 
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
 
             </div>
 
