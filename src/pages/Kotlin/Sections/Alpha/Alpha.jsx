@@ -10,7 +10,7 @@ function Co_Alpha() {
         <div className={styles.main}>
             
             <div className={styles.section_Top}>
-                <p>10 Projects</p>
+                <p>3 Projects</p>
             </div>
 
             {/* nodes goes here */}

@@ -12,10 +12,9 @@ function Co_Alpha() {
         <div className={styles.main}>
             
             <div className={styles.section_Top}>
-                <p>10 Projects</p>
+                <p>3 Projects</p>
             </div>
 
-            {/* nodes goes here */}
             <div className={styles.section_Body}>
                 <Co_Node nodeTitle="2D Farming"
                     nodeDescription="A farming game, made within 1 day, inspired by untitled farming game by _create on Roblox"
