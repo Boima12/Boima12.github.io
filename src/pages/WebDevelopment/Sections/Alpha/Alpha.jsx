@@ -12,7 +12,7 @@ function Co_Alpha() {
         <div className={styles.main}>
             
             <div className={styles.section_Top}>
-                <p>Static Websites</p>
+                <p>Static Websites(React version)</p>
             </div>
 
             {/* nodes goes here */}
