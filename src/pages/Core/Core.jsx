@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Co_LanguageCard from '../../myProps/LanguageCard/LanguageCard.jsx';
 
-import JavaImg from '../../assets/Images/javaimg.png';
+import JavaImg from '../../assets/Images/Java/javaimg.png';
 import KotlinImg from '../../assets/Images/kotlinimg.png';
-import WebDevelopmentImg from '../../assets/Images/webdevelopment.png';
+import WebDevelopmentImg from '../../assets/Images/WebDevelopment/webdevelopment.png';
 
 
 

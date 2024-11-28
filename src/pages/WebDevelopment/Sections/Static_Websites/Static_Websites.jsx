@@ -6,13 +6,13 @@ import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
 
-function Co_Beta() {
+function Co_Static_Websites() {
 
     return(
         <div className={styles.main}>
             
             <div className={styles.section_Top}>
-                <p>Section Beta</p>
+                <p>Static Websites</p>
             </div>
 
             {/* nodes goes here */}
@@ -20,17 +20,19 @@ function Co_Beta() {
                 <Co_Node nodeTitle="???" />
 
                 <Co_Node 
-                    nodeTitle="???" 
+                    nodeTitle="i like dog" 
                     nodeIconPath={cutedog}
                     nodeDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat mi. Etiam vulputate nulla vitae dolor egestas, vel pretium nibh fermentum. Donec dignissim sollicitudin aliquam. Integer interdum ipsum ac semper malesuada."
                 />
 
                 <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="ayo chill" />
                 <Co_Node nodeTitle="???" />
-
-
-
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="of course there is more, next section!" />
 
             </div>
 
@@ -42,4 +44,4 @@ function Co_Beta() {
 
 
 
-export default Co_Beta
+export default Co_Static_Websites
