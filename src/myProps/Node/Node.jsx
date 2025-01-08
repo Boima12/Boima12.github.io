@@ -16,8 +16,10 @@ function Co_Node({
         color: `${nodeDescriptionColor}`,
     };
 
+    const safeNodeLink = nodeLink && nodeLink.trim() !== "" ? nodeLink : "#";
+
     return (
-        <a href={nodeLink}>
+        <a href={safeNodeLink}>
             <div className={styles.main}>
                 <div className={styles.nodeIcon} style={iconstyle}></div>
                 <p>{nodeTitle}</p>
