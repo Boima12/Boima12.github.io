@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx'
 import './assets/fontAwesome/fontAwesome.js';
 import Page_WebDevelopment from './pages/WebDevelopment/WebDevelopment.jsx';
@@ -10,7 +10,7 @@ import './index.css'
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         <Route path="/" element={<App />} />
@@ -19,6 +19,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="/pages/Java" element={<Page_Java />} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
