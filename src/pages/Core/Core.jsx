@@ -1,18 +1,12 @@
 import styles from './Core.module.css';
-import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom'; // Use Link for better compatibility with HashRouter
 import Co_LanguageCard from '../../myProps/LanguageCard/LanguageCard.jsx';
 
 import JavaImg from '../../assets/Images/Java/javaimg.png';
 import KotlinImg from '../../assets/Images/kotlinimg.png';
 import WebDevelopmentImg from '../../assets/Images/WebDevelopment/webdevelopment.png';
 
-
-
 function Page_Core() {
-
-  const navigate = useNavigate();
-
   return (
     <div className={styles.main}>
 
@@ -24,31 +18,30 @@ function Page_Core() {
         <div className={styles.Spaces}>
 
           <div className={styles.Body1}>
-
             <div className={styles.horizontalLine}></div>
 
-            <button onClick={() => navigate('/pages/WebDevelopment')}>
+            {/* Use Link instead of navigate */}
+            <Link to="/pages/WebDevelopment">
               <Co_LanguageCard
                 title="Web Development"
                 imagePath={WebDevelopmentImg}
               />
-            </button>
+            </Link>
 
-            <button onClick={() => navigate('/pages/Kotlin')}>
+            <Link to="/pages/Kotlin">
               <Co_LanguageCard
                 title="Kotlin"
                 imagePath={KotlinImg}
               />
-            </button>
+            </Link>
 
-            <button onClick={() => navigate('/pages/Java')}>
+            <Link to="/pages/Java">
               <Co_LanguageCard
                 title="Java"
                 imagePath={JavaImg}
               />
-            </button>
+            </Link>
           </div>
-
 
           <p className={styles.info}>More in progress...</p>
         </div>
@@ -57,4 +50,4 @@ function Page_Core() {
   );
 }
 
-export default Page_Core
+export default Page_Core;
