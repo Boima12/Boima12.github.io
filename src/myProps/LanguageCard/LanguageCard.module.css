@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Inter";
-  src: url("../../assets/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
-}
-div.LanguageCard {
+div.main_languageCard {
   width: 400px;
   height: 450px;
   flex-shrink: 0;
@@ -14,23 +10,23 @@ div.LanguageCard {
   justify-content: center;
   gap: 15px;
 }
-
-div.LanguageCard div.bgImage {
+div.main_languageCard div.bgImage {
   width: 85%;
   height: 77%;
   flex-shrink: 0;
   margin-top: 30px;
   border-radius: 19px;
   background: #FFF;
+  z-index: 2;
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 40% 35%;
-  z-index: 2;
   transition: all 0.5s ease;
 }
-
-div.LanguageCard p {
+div.main_languageCard p {
   margin-top: -85px;
+  z-index: 1;
+  transition: all 0.5s ease;
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -39,76 +35,130 @@ div.LanguageCard p {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.5s ease;
 }
 
-/* Transition */
-div.LanguageCard:hover div.bgImage {
+div.main_languageCard:hover div.bgImage {
   transform: translateY(-40px);
 }
-div.LanguageCard:hover p {
+div.main_languageCard:hover p {
   transform: translateY(45px);
-  opacity: 1;
 }
 
-/* End Transition */
-/* Extra small devices (phones, below 600px) (also design this part with 350px) */
-@media only screen and (min-width: 350px) and (max-width: 1200px) {
-  div.LanguageCard {
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+  div.main_languageCard {
     width: 250px;
-    height: 320px;
-    border-radius: 27px;
+    height: 290px;
     gap: 30px;
   }
-  div.LanguageCard div.bgImage {
-    width: 85%;
+  div.main_languageCard div.bgImage {
     height: 70%;
     margin-top: 0;
-    border-radius: 19px;
-    z-index: 2;
     transition: none;
   }
-  div.LanguageCard:hover div.bgImage {
-    transform: none;
-  }
-  div.LanguageCard:hover p {
-    transform: none;
-  }
-  div.LanguageCard p {
+  div.main_languageCard p {
     margin-top: 0;
     margin-bottom: 0px;
-    font-size: 22px;
-    opacity: 1;
+    font-size: 20px;
     transition: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  div.main_languageCard:hover div.bgImage {
+    transform: none;
+  }
+  div.main_languageCard:hover p {
+    transform: none;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  div.LanguageCard {
-    width: 300px;
-    height: 370px;
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+  div.main_languageCard {
+    width: 250px;
+    height: 290px;
+    gap: 30px;
   }
-  div.LanguageCard p {
-    font-size: 26px;
+  div.main_languageCard div.bgImage {
+    height: 70%;
+    margin-top: 0;
+    transition: none;
+  }
+  div.main_languageCard p {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+    transition: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  div.main_languageCard:hover div.bgImage {
+    transform: none;
+  }
+  div.main_languageCard:hover p {
+    transform: none;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+  div.main_languageCard {
+    width: 250px;
+    height: 290px;
+    gap: 30px;
+  }
+  div.main_languageCard div.bgImage {
+    height: 70%;
+    margin-top: 0;
+    transition: none;
+  }
+  div.main_languageCard p {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+    transition: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  div.main_languageCard:hover div.bgImage {
+    transform: none;
+  }
+  div.main_languageCard:hover p {
+    transform: none;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  div.LanguageCard {
-    width: 400px;
-    height: 450px;
-    border-radius: 27px;
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+  div.main_languageCard {
+    width: 250px;
+    height: 290px;
+    gap: 30px;
   }
-  div.LanguageCard div.bgImage {
-    width: 85%;
-    height: 77%;
+  div.main_languageCard div.bgImage {
+    height: 70%;
+    margin-top: 0;
+    transition: none;
   }
-  div.LanguageCard p {
-    font-size: 32px;
+  div.main_languageCard p {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+    transition: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  div.main_languageCard:hover div.bgImage {
+    transform: none;
+  }
+  div.main_languageCard:hover p {
+    transform: none;
+  }
+  div.main_languageCard {
+    width: 320px;
+    height: 360px;
+  }
+  div.main_languageCard p {
+    font-size: 24px;
   }
 }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=LanguageCard.module.css.map */

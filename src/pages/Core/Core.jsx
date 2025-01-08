@@ -14,7 +14,7 @@ function Page_Core() {
   return (
     <div className={styles.main}>
 
-        <div className={styles.Core}>
+        <div className={styles.topTitle}>
           <p>Cao Hoàng Phước Bảo</p>
           <p>Boima</p>
         </div>
@@ -53,8 +53,6 @@ function Page_Core() {
           <p className={styles.info}>More in progress...</p>
         </div>
 
-
-        <div className={styles.voidspace}></div>
     </div>
   );
 }

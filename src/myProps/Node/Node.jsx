@@ -1,39 +1,33 @@
 import styles from './Node.module.css';
 import PropTypes from 'prop-types';
 
-
-
-function Co_Node(props) {
-
+function Co_Node({
+    nodeLink = "#", 
+    nodeIconPath, 
+    nodeTitle, 
+    nodeDescription, 
+    nodeDescriptionColor = "#000"
+}) {
     const iconstyle = {
-        backgroundImage: `url(${props.nodeIconPath})`
-    }
-
+        backgroundImage: `url(${nodeIconPath})`,
+    };
 
     const titlestyle = {
-        color: `${props.nodeDescriptionColor}`
-    }
+        color: `${nodeDescriptionColor}`,
+    };
 
-
-    return(
-        <a href={props.nodeLink}>
+    return (
+        <a href={nodeLink}>
             <div className={styles.main}>
-                
                 <div className={styles.nodeIcon} style={iconstyle}></div>
-
-                <p>{props.nodeTitle}</p>
-
+                <p>{nodeTitle}</p>
                 <div className={styles.nodeDescription}>
-                    <p style={titlestyle}>{props.nodeDescription}</p>
+                    <p style={titlestyle}>{nodeDescription}</p>
                 </div>
-
             </div>
         </a>
     );
-
 }
-
-
 
 Co_Node.propTypes = {
     nodeLink: PropTypes.string,
@@ -41,14 +35,6 @@ Co_Node.propTypes = {
     nodeTitle: PropTypes.string,
     nodeDescription: PropTypes.string,
     nodeDescriptionColor: PropTypes.string,
-}
+};
 
-
-
-Co_Node.defaultProps = {
-    nodeLink: "#",
-    nodeDescriptionColor: "#000",
-}
-
-
-export default Co_Node
+export default Co_Node;

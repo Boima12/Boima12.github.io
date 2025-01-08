@@ -1,0 +1,19 @@
+@import './assets/Fonts/fonts.css';
+
+html, body {
+    margin: 0;  /* body margin issue */
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;     /* position: fixed; issue */
+}
+
+
+:root {
+    width: 100%;
+
+    background: #F0F0F0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

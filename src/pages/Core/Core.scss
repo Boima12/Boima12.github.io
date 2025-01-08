@@ -1,257 +1,205 @@
-@font-face {
-    font-family: 'Inter';
-
-    src: url('../../assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
-}
-
-
-
-
-
-:root {
-    width: 100%;
-
-    background: #F0F0F0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-div.Core {
-    width: 389px;
-    height: 74px;
-
-    padding-top: 72px;
-
-    margin: 0px auto 0px auto;
+div.main {
+    width: 100vw;
+    margin: 100px 0 500px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    // outline: 1px solid red;
-}
+    div.topTitle {
+        width: 389px;
+        height: 74px;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-div.Core p:nth-child(1) {
-    width: 389px;
+        // outline: 1px solid red;
 
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+        p:nth-child(1) {        
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
 
-
-div.Core p:nth-child(2) {
-    align-self: flex-end;
-
-    margin-top: -35px;
-
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-
-    opacity: 0.9;
-}
-
-
-div.Spaces {
-    width: 1213px;
-    // height: 1073px;
-
-    margin-top: 124px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-div.Spaces div.Body1 {
-    width: 1000px;
-    // height: 799.999px;
-    padding-bottom: 200px;
-    flex-shrink: 0;
-
-    position: relative;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    row-gap: 100px;
-
-    // outline: 1px solid red;
-}
-
-
-div.Spaces div.Body1 div.horizontalLine {
-    position: absolute;
-
-    top: -27px;
-    left: 50%;
-
-    width: 1px;
-    height: 90%;
-    background: #000;
-    opacity: 0.5;
-}
-
-
-div.Spaces p.info {
-
-    margin-top: 200px;
-
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-    opacity: 0.7;
-}
-
-
-div.voidspace {
-    height: 30rem;
-}
-
-
-
-
-
-
-
-
-/* Extra small devices (phones, below 600px) (also design this part with 450px) */
-@media only screen and (min-width: 100px) and (max-width: 1536px) {
-    div.Core {
-        width: 350px;
-    }
-    
-    
-    div.Core p:nth-child(1) {
-        font-size: 25px;
-    }
-    
-    
-    div.Core p:nth-child(2) {
-        font-size: 17px;
-        margin-top: -20px;
-        padding-right: 30px;
-    }
-    
-    
-    div.Spaces div.Body1 div.horizontalLine {
-        display: none;
+        p:nth-child(2) {
+            align-self: flex-end;
+            margin-top: -35px;
+            opacity: 0.7;
+        
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
 
     div.Spaces {
         width: 100%;
-        max-width: 495px;
-    
-        margin-top: 100px;
-    }
+        margin-top: 124px;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-    div.Spaces div.Body1 {
-        width: 100%;
+        div.Body1 {
+            width: 1000px;
+            padding-bottom: 200px;
+            flex-shrink: 0;
+        
+            position: relative;
+        
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: 100px;
+        
+            // outline: 1px solid red;
 
-        padding-bottom: 150px;
+            div.horizontalLine {
+                width: 1px;
+                height: 90%;
+                background: #000;
+                opacity: 0.5;
 
-        justify-content: center;
+                position: absolute;
+                top: -27px;
+                left: 50%;
+            }
+        }
 
-        row-gap: 50px;
+        p.info {
+            margin-top: 200px;
+            opacity: 0.7;
+        
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
     }
 }
 
 
+@mixin screen320 {
+    div.main {
+        div.topTitle {
+            width: 95%;
+            
+            p:nth-child(1) {
+                font-size: 26px;
+            }
+
+            p:nth-child(2) {
+                font-size: 22px;
+                margin-top: -20px;
+            }
+        }
+
+        div.Spaces {
+            div.Body1 {
+                width: 95%;
+
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+
+                div.horizontalLine {
+                    display: none;
+                }
+            }
+
+            p.info {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+
+@mixin screen600 {
+    @include screen320;
+
+    div.main {
+        div.Spaces {
+            div.Body1 {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: normal;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+
+@mixin screen768 {
+    div.main {
+        div.Spaces {
+            div.Body1 {
+                width: 750px;
+            }
+        }
+    }
+}
+
+
+@mixin screen992 {
+    div.main {
+        div.Spaces {
+            div.Body1 {
+                width: 900px;
+            }
+        }
+    }
+}
+
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+    @include screen320;
+}
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 1536px) {
-    div.Core {
-        width: 389px;
-    }
-    
-    
-    div.Core p:nth-child(1) {
-        font-size: 32px;
-    }
-    
-    
-    div.Core p:nth-child(2) {
-        font-size: 24px;
-        margin-top: -35px;
-        padding-right: 0;
-    }
-    
-
-    div.Spaces {
-        margin-top: 124px;
-    }
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+    @include screen600;
 }
 
 
 
-
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 1536px) {
-    div.Spaces {
-        width: 90vw;
-        max-width: none;
-    }
-
-    
-    div.Spaces div.Body1 {
-        width: 100%;
-
-        justify-content: space-between;
-    }
-
-
-    div.Spaces div.Body1 div.horizontalLine {
-        display: block;
-    }
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    @include screen768;
 } 
-
-
 
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1536px) {
-    div.Spaces div.Body1 {
-        max-width: 1000px;
-
-        padding-bottom: 200px;
-    }
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+    @include screen992;
 } 
-
-
 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1536px) {
-    div.Spaces div.Body1 {
-        row-gap: 100px;
-    }
+@media only screen and (min-width: 1200px) and (max-width: 1535.9px) {
+
 } 
+
 

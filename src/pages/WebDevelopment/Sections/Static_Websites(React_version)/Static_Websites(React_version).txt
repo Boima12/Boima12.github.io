@@ -1,0 +1,110 @@
+// original code
+
+import styles from '../../../../styles/sectionStyle/sectionStyle.module.css';
+import { useRef, useEffect } from 'react';
+
+
+import Co_Node from '../../../../myProps/Node/Node';
+
+import bandimg from '../../../../assets/Images/WebDevelopment/band.png';
+import cutedog from '../../../../assets/Samples/cutedog.jpg';
+
+
+
+function Co_Static_Websites_React_version() {
+
+    const para_panel1 = useRef();
+    const body_panel1 = useRef();
+    const para_panel2 = useRef();
+    const body_panel2 = useRef();
+    const para_panel3 = useRef();
+    const body_panel3 = useRef();
+
+    useEffect(() => {
+        if (para_panel1.current) {
+            para_panel1.current.classList.add(styles.section_active);
+        }
+        if (body_panel1.current) {
+            body_panel1.current.classList.add(styles.section_body_active);
+        }
+    }, []);
+
+    
+    const para_panel_refresh = () => {
+        para_panel1.current.classList.remove(styles.section_active);
+        para_panel2.current.classList.remove(styles.section_active);
+        para_panel3.current.classList.remove(styles.section_active);
+
+        body_panel1.current.classList.remove(styles.section_body_active);
+        body_panel2.current.classList.remove(styles.section_body_active);
+        body_panel3.current.classList.remove(styles.section_body_active);
+    }
+
+    const para_panel1_toggle = () => {
+        para_panel_refresh();
+        para_panel1.current.classList.add(styles.section_active);
+        body_panel1.current.classList.add(styles.section_body_active);
+    }
+
+    const para_panel2_toggle = () => {
+        para_panel_refresh();
+        para_panel2.current.classList.add(styles.section_active);
+        body_panel2.current.classList.add(styles.section_body_active);
+    }
+
+    const para_panel3_toggle = () => {
+        para_panel_refresh();
+        para_panel3.current.classList.add(styles.section_active);
+        body_panel3.current.classList.add(styles.section_body_active);
+    }
+
+    return(
+        <div className={styles.main}>
+            
+            <div className={styles.section_top}>
+                <p ref={para_panel1} onClick={para_panel1_toggle}>Static Websites(React version)</p>
+                <p ref={para_panel2} onClick={para_panel2_toggle}>Static Websites(Plain version)</p>
+                <p ref={para_panel3} onClick={para_panel3_toggle}>Static Websites(Special version)</p>
+            </div>
+
+            {/* nodes go here */}
+            <div className={styles.section_body} ref={body_panel1}>
+                <Co_Node nodeTitle="Band"
+                    nodeDescription="A simple band website page"
+                    nodeDescriptionColor="#001f24"
+                    nodeIconPath={bandimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_Band/"
+                />
+
+                <Co_Node 
+                    nodeTitle="???" 
+                    nodeIconPath={cutedog}
+                    nodeDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat mi. Etiam vulputate nulla vitae dolor egestas, vel pretium nibh fermentum. Donec dignissim sollicitudin aliquam. Integer interdum ipsum ac semper malesuada."
+                />
+
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="ayo chill" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="???" />
+            </div>
+
+            <div className={styles.section_body} ref={body_panel2}>
+                <Co_Node nodeTitle="panel2" />
+            </div>
+            
+            <div className={styles.section_body} ref={body_panel3}>
+                <Co_Node nodeTitle="panel3" />
+            </div>
+
+        </div>
+    );
+
+}
+
+
+
+export default Co_Static_Websites_React_version

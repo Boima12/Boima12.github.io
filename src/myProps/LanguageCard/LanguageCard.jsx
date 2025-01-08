@@ -10,13 +10,10 @@ function Co_LanguageCard(props) {
 
 
     return (
-      <div className={styles.main}>
+      <div className={styles.main_languageCard}>
 
-        <div className={styles.LanguageCard}>
           <div className={styles.bgImage} style={imgstyle}></div>
-
           <p>{props.title}</p>
-        </div>
 
       </div>
     );

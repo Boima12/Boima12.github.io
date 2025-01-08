@@ -1,4 +1,6 @@
 import styles from '../../../../styles/sectionStyle/sectionStyle.module.css';
+import { useState } from 'react';
+
 
 import Co_Node from '../../../../myProps/Node/Node';
 
@@ -9,15 +11,42 @@ import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 function Co_Static_Websites_React_version() {
 
+    // State to track the active panel
+    const [activePanel, setActivePanel] = useState(1);
+
+    // Function to handle panel toggling
+    const togglePanel = (panelNumber) => {
+        setActivePanel(panelNumber); // Set the active panel dynamically
+    };
+
     return(
         <div className={styles.main}>
             
-            <div className={styles.section_Top}>
-                <p>Static Websites(React version)</p>
+            <div className={styles.section_top}>
+                <p
+                    className={activePanel === 1 ? styles.section_active : ''}
+                    onClick={() => togglePanel(1)}
+                >
+                    Static Websites(React version)
+                </p>
+
+                <p
+                    className={activePanel === 2 ? styles.section_active : ''}
+                    onClick={() => togglePanel(2)}
+                >
+                    Static Websites(Plain version)
+                </p>
+            </div>
+
+            <div className={styles.section_top_collapse}>
+                <select>
+                    <option onClick={() => togglePanel(1)}>Static Websites(React version)</option>
+                    <option onClick={() => togglePanel(2)}>Static Websites(Plain version)</option>
+                </select>
             </div>
 
             {/* nodes go here */}
-            <div className={styles.section_Body}>
+            <div className={`${styles.section_body} ${activePanel === 1 ? styles.section_body_active : ''}`}>
                 <Co_Node nodeTitle="Band"
                     nodeDescription="A simple band website page"
                     nodeDescriptionColor="#001f24"
@@ -39,12 +68,11 @@ function Co_Static_Websites_React_version() {
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
-
-
-
-
             </div>
 
+            <div className={`${styles.section_body} ${activePanel === 2 ? styles.section_body_active : ''}`}>
+                <Co_Node nodeTitle="???" />
+            </div>
 
         </div>
     );
