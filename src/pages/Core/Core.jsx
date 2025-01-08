@@ -1,5 +1,5 @@
 import styles from './Core.module.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import Co_LanguageCard from '../../myProps/LanguageCard/LanguageCard.jsx';
 
@@ -10,6 +10,8 @@ import WebDevelopmentImg from '../../assets/Images/WebDevelopment/webdevelopment
 
 
 function Page_Core() {
+
+  const navigate = useNavigate();
 
   return (
     <div className={styles.main}>
@@ -25,28 +27,26 @@ function Page_Core() {
 
             <div className={styles.horizontalLine}></div>
 
-            <Link to="/Pages/WebDevelopment">
+            <a href="#" onClick={() => navigate('/pages/WebDevelopment')}>
               <Co_LanguageCard
                 title="Web Development"
                 imagePath={WebDevelopmentImg}
               />
-            </Link>
+            </a>
 
-
-            <Link to="/Pages/Kotlin">
+            <a href="#" onClick={() => navigate('/pages/Kotlin')}>
               <Co_LanguageCard
                 title="Kotlin"
                 imagePath={KotlinImg}
               />
-            </Link>
+            </a>
 
-
-            <Link to="/Pages/Java">
+            <a href="#" onClick={() => navigate('/pages/Java')}>
               <Co_LanguageCard
                 title="Java"
                 imagePath={JavaImg}
               />
-            </Link>
+            </a>
           </div>
 
 

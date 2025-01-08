@@ -14,9 +14,9 @@ createRoot(document.getElementById("root")).render(
       <Routes>
 
         <Route path="/" element={<App />} />
-        <Route path="/Pages/WebDevelopment" element={<Page_WebDevelopment />} />
-        <Route path="/Pages/Kotlin" element={<Page_Kotlin />} />
-        <Route path="/Pages/Java" element={<Page_Java />} />
+        <Route path="/pages/WebDevelopment" element={<Page_WebDevelopment />} />
+        <Route path="/pages/Kotlin" element={<Page_Kotlin />} />
+        <Route path="/pages/Java" element={<Page_Java />} />
 
       </Routes>
     </BrowserRouter>
