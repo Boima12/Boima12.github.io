@@ -27,26 +27,26 @@ function Page_Core() {
 
             <div className={styles.horizontalLine}></div>
 
-            <a href="#" onClick={() => navigate('/pages/WebDevelopment')}>
+            <button onClick={() => navigate('/pages/WebDevelopment')}>
               <Co_LanguageCard
                 title="Web Development"
                 imagePath={WebDevelopmentImg}
               />
-            </a>
+            </button>
 
-            <a href="#" onClick={() => navigate('/pages/Kotlin')}>
+            <button onClick={() => navigate('/pages/Kotlin')}>
               <Co_LanguageCard
                 title="Kotlin"
                 imagePath={KotlinImg}
               />
-            </a>
+            </button>
 
-            <a href="#" onClick={() => navigate('/pages/Java')}>
+            <button onClick={() => navigate('/pages/Java')}>
               <Co_LanguageCard
                 title="Java"
                 imagePath={JavaImg}
               />
-            </a>
+            </button>
           </div>
 
 

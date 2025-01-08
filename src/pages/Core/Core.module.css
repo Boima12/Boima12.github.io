@@ -61,6 +61,14 @@ div.main div.Spaces div.Body1 div.horizontalLine {
   top: -27px;
   left: 50%;
 }
+div.main div.Spaces div.Body1 button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+div.main div.Spaces div.Body1 button:hover {
+  background: none;
+}
 div.main div.Spaces p.info {
   margin-top: 200px;
   opacity: 0.7;
