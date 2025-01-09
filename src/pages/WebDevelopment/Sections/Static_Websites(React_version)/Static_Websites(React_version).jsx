@@ -71,7 +71,12 @@ function Co_Static_Websites_React_version() {
             </div>
 
             <div className={`${styles.section_body} ${activePanel === 2 ? styles.section_body_active : ''}`}>
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Band"
+                    nodeDescription="A simple band website page, this one is just html, css and JavaScript. I made it to just see the differences between React and normal HTML."
+                    nodeDescriptionColor="#001f24"
+                    nodeIconPath={bandimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_Plain_Band/"
+                />
             </div>
 
         </div>
