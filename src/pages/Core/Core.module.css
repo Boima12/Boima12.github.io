@@ -6,7 +6,7 @@ div.main {
   align-items: center;
 }
 div.main div.topTitle {
-  width: 389px;
+  max-width: 389px;
   height: 74px;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,9 @@ div.main div.Spaces p.info {
   }
   div.main div.topTitle p:nth-child(2) {
     font-size: 22px;
-    margin-top: -20px;
+    position: relative;
+    top: 10px;
+    left: -30px;
   }
   div.main div.Spaces div.Body1 {
     width: 95%;
@@ -117,7 +119,9 @@ div.main div.Spaces p.info {
   }
   div.main div.topTitle p:nth-child(2) {
     font-size: 22px;
-    margin-top: -20px;
+    position: relative;
+    top: 10px;
+    left: -30px;
   }
   div.main div.Spaces div.Body1 {
     width: 95%;
