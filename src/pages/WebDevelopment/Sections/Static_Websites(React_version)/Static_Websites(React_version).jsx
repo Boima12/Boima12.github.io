@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
 
-import bandimg from '../../../../assets/Images/WebDevelopment/band.png';
+import bandimg from '~/src/assets/Images/WebDevelopment/band.png';
+import artimg from '~/src/assets/Images/WebDevelopment/art.png';
 import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
@@ -54,10 +55,11 @@ function Co_Static_Websites_React_version() {
                     nodeLink="https://boima12.github.io/StaticWebsites_React_Band/"
                 />
 
-                <Co_Node 
-                    nodeTitle="???" 
-                    nodeIconPath={cutedog}
-                    nodeDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat mi. Etiam vulputate nulla vitae dolor egestas, vel pretium nibh fermentum. Donec dignissim sollicitudin aliquam. Integer interdum ipsum ac semper malesuada."
+                <Co_Node nodeTitle="Art"
+                    nodeDescription="A website page with customize picture size? amazing."
+                    // nodeDescriptionColor="#001f24"
+                    nodeIconPath={artimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_Art/"
                 />
 
                 <Co_Node nodeTitle="???" />
@@ -66,7 +68,13 @@ function Co_Static_Websites_React_version() {
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
-                <Co_Node nodeTitle="???" />
+
+                <Co_Node 
+                    nodeTitle="???" 
+                    nodeIconPath={cutedog}
+                    nodeDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat mi. Etiam vulputate nulla vitae dolor egestas, vel pretium nibh fermentum. Donec dignissim sollicitudin aliquam. Integer interdum ipsum ac semper malesuada."
+                />
+
                 <Co_Node nodeTitle="???" />
             </div>
 
