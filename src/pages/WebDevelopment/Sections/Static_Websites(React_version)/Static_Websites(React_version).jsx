@@ -6,6 +6,7 @@ import Co_Node from '../../../../myProps/Node/Node';
 
 import bandimg from '~/src/assets/Images/WebDevelopment/band.png';
 import artimg from '~/src/assets/Images/WebDevelopment/art.png';
+import blogimg from '~/src/assets/Images/WebDevelopment/blog.png';
 import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
@@ -57,12 +58,16 @@ function Co_Static_Websites_React_version() {
 
                 <Co_Node nodeTitle="Art"
                     nodeDescription="A website page with customize picture size? amazing."
-                    // nodeDescriptionColor="#001f24"
                     nodeIconPath={artimg}
                     nodeLink="https://boima12.github.io/StaticWebsites_React_Art/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Blog"
+                    nodeDescription="A flexible screen that split into two side? can put as many blog as you want!"
+                    nodeIconPath={blogimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_Blog/"
+                />
+
                 <Co_Node nodeTitle="ayo chill" />
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />

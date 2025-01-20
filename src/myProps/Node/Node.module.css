@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Inter";
-  src: url("../../assets/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
-}
 div.main {
   position: relative;
   width: 270px;
@@ -15,7 +11,6 @@ div.main {
   justify-content: space-around;
   align-items: center;
 }
-
 div.main div.nodeIcon {
   width: 85%;
   height: 65%;
@@ -25,8 +20,8 @@ div.main div.nodeIcon {
   background: #E7E7E7;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
-
 div.main p {
   /* width: 90%; */
   color: #000;
@@ -37,21 +32,19 @@ div.main p {
   font-weight: 400;
   line-height: normal;
 }
-
 div.main div.nodeDescription {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   transform: translateX(-37%);
   border-radius: 10px;
   opacity: 0;
   backdrop-filter: blur(20px);
-  z-index: 2;
   transition: all 0.7s ease;
 }
-
 div.main div.nodeDescription p {
   padding: 0 10px 0 60px;
   color: #000;
@@ -70,8 +63,9 @@ div.main:hover div.nodeDescription {
 }
 
 /* End Transition */
+/* Extra small devices (phones, below 600px) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
   div.main {
     width: 200px;
     height: 230px;
@@ -84,5 +78,34 @@ div.main:hover div.nodeDescription {
     padding: 0 10px 0 50px;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+  div.main {
+    width: 200px;
+    height: 230px;
+  }
+  div.main p {
+    font-size: 16px;
+  }
+  div.main div.nodeDescription p {
+    font-size: 12px;
+    padding: 0 10px 0 50px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+  div.main {
+    width: 200px;
+    height: 230px;
+  }
+  div.main p {
+    font-size: 16px;
+  }
+  div.main div.nodeDescription p {
+    font-size: 12px;
+    padding: 0 10px 0 50px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=Node.module.css.map */

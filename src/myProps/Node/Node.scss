@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Inter';
-
-    src: url('../../assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
-}
-
-
-
-
-
 div.main {
     position: relative;
 
@@ -24,68 +14,61 @@ div.main {
     justify-content: space-around;
     align-items: center;
 
-    // outline: 1px solid green;
-}
-
-
-div.main div.nodeIcon {
-    width: 85%;
-    height: 65%;
-    margin-top: 10px;
-    flex-shrink: 0;
-
-    border-radius: 5px;
-    background: #E7E7E7;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-div.main p {
-    /* width: 90%; */
-
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-div.main div.nodeDescription {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    transform: translateX(-37%);
+    div.nodeIcon {
+        width: 85%;
+        height: 65%;
+        margin-top: 10px;
+        flex-shrink: 0;
     
-    border-radius: 10px;
-    opacity: 0;
-    backdrop-filter: blur(20px);
+        border-radius: 5px;
+        background: #E7E7E7;
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 
-    z-index: 2;
+    p {
+        /* width: 90%; */
+    
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-    transition: all 0.7s ease;
+    div.nodeDescription {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        z-index: 2;
+        transform: translateX(-37%);
+        
+        border-radius: 10px;
+        opacity: 0;
+        backdrop-filter: blur(20px);
+    
+        transition: all 0.7s ease;
+
+        p {
+            padding: 0 10px 0 60px;
+        
+            color: #000;
+            text-align: left;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
 }
-
-
-div.main div.nodeDescription p {
-    padding: 0 10px 0 60px;
-
-    color: #000;
-    text-align: left;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 
 
 
@@ -100,23 +83,57 @@ div.main:hover {
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@mixin screen600 {
     div.main {
         width: 200px;
         height: 230px;
-    }
 
-    
-    div.main p {
-        font-size: 16px;
+        p {
+            font-size: 16px;
+        }
+
+        div.nodeDescription {
+            p {
+                font-size: 12px;
+                padding: 0 10px 0 50px;
+            }
+        }
     }
+}
 
 
-    div.main div.nodeDescription p {
-        font-size: 12px;
-        padding: 0 10px 0 50px;
-    }
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+    @include screen600;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    @include screen600;
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+    @include screen600;
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1535.9px) {
+
 }
 
 
