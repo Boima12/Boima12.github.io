@@ -5,6 +5,7 @@ import Co_Node from '~/src/myProps/Node/Node';
 
 // import cutedog from '~/src/assets/Samples/cutedog.jpg';
 import toDoList from '~/src/assets/Images/WebDevelopment/toDoList.png';
+import digitalClock from '~/src/assets/Images/WebDevelopment/digitalClock.png';
 
 
 function Co_Onboarding() {
@@ -43,7 +44,12 @@ function Co_Onboarding() {
                     nodeLink="https://boima12.github.io/Onboarding_ToDoList/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Digital clock" 
+                    nodeDescription="a simple digital clock web app, cute dogs included!."
+                    nodeIconPath={digitalClock}
+                    nodeLink="https://boima12.github.io/Onboarding_DigitalClock/"
+                />                
+
                 <Co_Node nodeTitle="???" />
             </div>
 
