@@ -8,6 +8,7 @@ import bandimg from '~/src/assets/Images/WebDevelopment/band.png';
 import artimg from '~/src/assets/Images/WebDevelopment/art.png';
 import blogimg from '~/src/assets/Images/WebDevelopment/blog.png';
 import foodBlogimg from '~/src/assets/Images/WebDevelopment/foodBlog.png';
+import CVimg from '~/src/assets/Images/WebDevelopment/CV.png';
 import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
@@ -75,7 +76,12 @@ function Co_Static_Websites_React_version() {
                     nodeLink="https://boima12.github.io/StaticWebsites_React_FoodBlog/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Curriculum Vitae"
+                    nodeDescription="A curriculum vitae web page about myself."
+                    nodeIconPath={CVimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_CV/"
+                />
+
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
