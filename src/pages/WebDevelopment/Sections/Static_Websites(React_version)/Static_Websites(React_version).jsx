@@ -9,8 +9,8 @@ import artimg from '~/src/assets/Images/WebDevelopment/art.png';
 import blogimg from '~/src/assets/Images/WebDevelopment/blog.png';
 import foodBlogimg from '~/src/assets/Images/WebDevelopment/foodBlog.png';
 import CVimg from '~/src/assets/Images/WebDevelopment/CV.png';
+import NaturePortfolioimg from '~/src/assets/Images/WebDevelopment/NaturePortfolio.png';
 import cutedog from '../../../../assets/Samples/cutedog.jpg';
-
 
 
 function Co_Static_Websites_React_version() {
@@ -82,7 +82,12 @@ function Co_Static_Websites_React_version() {
                     nodeLink="https://boima12.github.io/StaticWebsites_React_CV/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Nature Portfolio"
+                    nodeDescription="A portfolio website, much more advanced."
+                    nodeIconPath={NaturePortfolioimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_NaturePortfolio/"
+                />
+
                 <Co_Node nodeTitle="???" />
                 <Co_Node nodeTitle="???" />
 
