@@ -10,6 +10,7 @@ import blogimg from '~/src/assets/Images/WebDevelopment/blog.png';
 import foodBlogimg from '~/src/assets/Images/WebDevelopment/foodBlog.png';
 import CVimg from '~/src/assets/Images/WebDevelopment/CV.png';
 import NaturePortfolioimg from '~/src/assets/Images/WebDevelopment/NaturePortfolio.png';
+import darkPortfolioimg from '~/src/assets/Images/WebDevelopment/darkPortfolio.jpg';
 import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
@@ -88,7 +89,12 @@ function Co_Static_Websites_React_version() {
                     nodeLink="https://boima12.github.io/StaticWebsites_React_NaturePortfolio/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node nodeTitle="Dark Portfolio"
+                    nodeDescription="Black & White Portfolio theme website, featuring little glow light when hovering, definitely a blast."
+                    nodeIconPath={darkPortfolioimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_DarkPortfolio/"
+                />
+
                 <Co_Node nodeTitle="???" />
 
                 <Co_Node 
