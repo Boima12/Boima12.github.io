@@ -12,7 +12,8 @@ import CVimg from '~/src/assets/Images/WebDevelopment/CV.png';
 import NaturePortfolioimg from '~/src/assets/Images/WebDevelopment/NaturePortfolio.png';
 import darkPortfolioimg from '~/src/assets/Images/WebDevelopment/darkPortfolio.jpg';
 import clothingStoreimg from '~/src/assets/Images/WebDevelopment/clothingStore.png';
-import cutedog from '../../../../assets/Samples/cutedog.jpg';
+import mailimg from '~/src/assets/Images/WebDevelopment/Mail.png';
+// import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
 function Co_Static_Websites_React_version() {
@@ -104,9 +105,10 @@ function Co_Static_Websites_React_version() {
                 />
 
                 <Co_Node 
-                    nodeTitle="???" 
-                    nodeIconPath={cutedog}
-                    nodeDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat mi. Etiam vulputate nulla vitae dolor egestas, vel pretium nibh fermentum. Donec dignissim sollicitudin aliquam. Integer interdum ipsum ac semper malesuada."
+                    nodeTitle="Mail" 
+                    nodeDescription="A mail website, i thought we do static pages only, what a surprise"
+                    nodeIconPath={mailimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_Mail/"
                 />
 
                 <Co_Node nodeTitle="???" />
