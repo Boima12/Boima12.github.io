@@ -13,6 +13,7 @@ import NaturePortfolioimg from '~/src/assets/Images/WebDevelopment/NaturePortfol
 import darkPortfolioimg from '~/src/assets/Images/WebDevelopment/darkPortfolio.jpg';
 import clothingStoreimg from '~/src/assets/Images/WebDevelopment/clothingStore.png';
 import mailimg from '~/src/assets/Images/WebDevelopment/Mail.png';
+import kitchenSinkimg from '~/src/assets/Images/WebDevelopment/kitchenSink.png';
 // import cutedog from '../../../../assets/Samples/cutedog.jpg';
 
 
@@ -111,7 +112,12 @@ function Co_Static_Websites_React_version() {
                     nodeLink="https://boima12.github.io/StaticWebsites_React_Mail/"
                 />
 
-                <Co_Node nodeTitle="???" />
+                <Co_Node 
+                    nodeTitle="Kitchen Sink" 
+                    nodeDescription="its name is weird isn't it? but this website can change its theme amazingly."
+                    nodeIconPath={kitchenSinkimg}
+                    nodeLink="https://boima12.github.io/StaticWebsites_React_KitchenSink"
+                />
             </div>
 
             <div className={`${styles.section_body} ${activePanel === 2 ? styles.section_body_active : ''}`}>
