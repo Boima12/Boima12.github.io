@@ -27,6 +27,7 @@ function Co_Static_Websites_React_version() {
         setActivePanel(panelNumber); // Set the active panel dynamically
     };
 
+    
     return(
         <div className={styles.main}>
             
