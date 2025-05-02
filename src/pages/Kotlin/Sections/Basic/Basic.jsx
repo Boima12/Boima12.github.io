@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
 
+import simpleCalculatorImg from '../../../../assets/Images/Kotlin/simpleCalculator.png';
+
 
 
 function Co_Basic() {
@@ -31,7 +33,12 @@ function Co_Basic() {
 
             {/* nodes goes here */}
             <div className={`${styles.section_body} ${activePanel === 1 ? styles.section_body_active : ''}`}>
-                <Co_Node nodeTitle="Simple Calculator" />
+                <Co_Node nodeTitle="Simple Calculator" 
+                    nodeDescription="A simple calculator that can help you calculate adding, subtracting, multiplying, and dividing."
+                    nodeIconPath={simpleCalculatorImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_SimpleCalculator"
+                />
+
                 <Co_Node nodeTitle="Music Player" />
                 <Co_Node nodeTitle="Reflex Game" />
                 <Co_Node nodeTitle="Flashlight" />

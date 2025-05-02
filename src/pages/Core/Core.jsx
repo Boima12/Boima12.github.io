@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Co_LanguageCard from '../../myProps/LanguageCard/LanguageCard.jsx';
 
 import JavaImg from '../../assets/Images/Java/javaimg.png';
-import KotlinImg from '../../assets/Images/kotlinimg.png';
+import KotlinImg from '../../assets/Images/Kotlin/kotlinimg.png';
 import WebDevelopmentImg from '../../assets/Images/WebDevelopment/webdevelopment.png';
 
 function Page_Core() {
