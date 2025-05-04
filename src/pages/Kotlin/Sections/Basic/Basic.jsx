@@ -7,6 +7,7 @@ import simpleCalculatorImg from '~/src/assets/Images/Kotlin/simpleCalculator.png
 import musicPlayerImg from '~/src/assets/Images/Kotlin/musicPlayer.png';
 import reflexGameImg from '~/src/assets/Images/Kotlin/reflexGame.png';
 import torchLightImg from '~/src/assets/Images/Kotlin/torchLight.png';
+import zxingQRImg from '~/src/assets/Images/Kotlin/zxingQR.png';
 
 
 
@@ -60,7 +61,11 @@ function Co_Basic() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_TorchLight"
                 />
 
-                <Co_Node nodeTitle="QR Code Reader" />
+                <Co_Node nodeTitle="Zxing QR" 
+                    nodeDescription="this app is a QR code reader app, use Zxing QR."
+                    nodeIconPath={zxingQRImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_ZxingQR"
+                />
             </div>
 
         </div>
