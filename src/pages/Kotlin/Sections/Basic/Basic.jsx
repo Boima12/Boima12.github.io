@@ -6,6 +6,7 @@ import Co_Node from '../../../../myProps/Node/Node';
 import simpleCalculatorImg from '~/src/assets/Images/Kotlin/simpleCalculator.png';
 import musicPlayerImg from '~/src/assets/Images/Kotlin/musicPlayer.png';
 import reflexGameImg from '~/src/assets/Images/Kotlin/reflexGame.png';
+import torchLightImg from '~/src/assets/Images/Kotlin/torchLight.png';
 
 
 
@@ -50,10 +51,15 @@ function Co_Basic() {
                 <Co_Node nodeTitle="Reflex Game" 
                     nodeDescription="this app is a simple reflex game app that test your reflection."
                     nodeIconPath={reflexGameImg}
-                    nodeLink="https://github.com/Boima12/AndroidStudio_ReflexGame.git"
+                    nodeLink="https://github.com/Boima12/AndroidStudio_ReflexGame"
                 />
 
-                <Co_Node nodeTitle="Flashlight" />
+                <Co_Node nodeTitle="Torch Light" 
+                    nodeDescription="this app is a simple flashlight app that toggle the flashlight on your device."
+                    nodeIconPath={torchLightImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_TorchLight"
+                />
+
                 <Co_Node nodeTitle="QR Code Reader" />
             </div>
 
