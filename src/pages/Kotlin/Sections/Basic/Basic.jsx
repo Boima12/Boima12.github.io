@@ -3,7 +3,8 @@ import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
 
-import simpleCalculatorImg from '../../../../assets/Images/Kotlin/simpleCalculator.png';
+import simpleCalculatorImg from '~/src/assets/Images/Kotlin/simpleCalculator.png';
+import musicPlayerImg from '~/src/assets/Images/Kotlin/musicPlayer.png';
 
 
 
@@ -39,7 +40,12 @@ function Co_Basic() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_SimpleCalculator"
                 />
 
-                <Co_Node nodeTitle="Music Player" />
+                <Co_Node nodeTitle="Music Player" 
+                    nodeDescription="this app is a simple music player app that contains a very chill lofi song."
+                    nodeIconPath={musicPlayerImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_MusicPlayer"
+                />
+
                 <Co_Node nodeTitle="Reflex Game" />
                 <Co_Node nodeTitle="Flashlight" />
                 <Co_Node nodeTitle="QR Code Reader" />
