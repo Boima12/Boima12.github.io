@@ -116,6 +116,7 @@ function Co_Static_Websites_React_version() {
                 <Co_Node 
                     nodeTitle="Kitchen Sink" 
                     nodeDescription="its name is weird isn't it? but this website can change its theme amazingly."
+                    nodeDescriptionColor="#FFFFFF"
                     nodeIconPath={kitchenSinkimg}
                     nodeLink="https://boima12.github.io/StaticWebsites_React_KitchenSink"
                 />
