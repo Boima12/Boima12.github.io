@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
 
+import dynamicAudioPlayerImg from '~/src/assets/Images/Kotlin/dynamicAudioPlayer.png';
 
 
 function Co_Intermediate() {
@@ -31,7 +32,12 @@ function Co_Intermediate() {
 
             {/* nodes goes here */}
             <div className={`${styles.section_body} ${activePanel === 1 ? styles.section_body_active : ''}`}>
-                <Co_Node nodeTitle="Dynamic Audio Player" />
+                <Co_Node nodeTitle="Dynamic Audio Player" 
+                    nodeDescription="This app is a audio player with the help of Firebase."
+                    nodeIconPath={dynamicAudioPlayerImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_DynamicAudioPlayer"
+                />
+
                 <Co_Node nodeTitle="Dynamic Video Player" />
                 <Co_Node nodeTitle="Weather App" />
                 <Co_Node nodeTitle="Sticky Notes" />
