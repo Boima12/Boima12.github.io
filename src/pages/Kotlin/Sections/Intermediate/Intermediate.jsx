@@ -5,6 +5,7 @@ import Co_Node from '../../../../myProps/Node/Node';
 
 import dynamicAudioPlayerImg from '~/src/assets/Images/Kotlin/dynamicAudioPlayer.png';
 import dynamicVideoPlayerImg from '~/src/assets/Images/Kotlin/dynamicVideoPlayer.png';
+import weatherAppImg from '~/src/assets/Images/Kotlin/weatherApp.png';
 
 
 function Co_Intermediate() {
@@ -45,7 +46,12 @@ function Co_Intermediate() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_DynamicVideoPlayer"
                 />
 
-                <Co_Node nodeTitle="Weather App" />
+                <Co_Node nodeTitle="Weather App" 
+                    nodeDescription="This app is a weather app with the help of openWeather API."
+                    nodeIconPath={weatherAppImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_WeatherApp"
+                />
+
                 <Co_Node nodeTitle="Sticky Notes" />
             </div>
 
