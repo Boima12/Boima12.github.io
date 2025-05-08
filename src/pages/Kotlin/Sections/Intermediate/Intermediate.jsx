@@ -6,6 +6,7 @@ import Co_Node from '../../../../myProps/Node/Node';
 import dynamicAudioPlayerImg from '~/src/assets/Images/Kotlin/dynamicAudioPlayer.png';
 import dynamicVideoPlayerImg from '~/src/assets/Images/Kotlin/dynamicVideoPlayer.png';
 import weatherAppImg from '~/src/assets/Images/Kotlin/weatherApp.png';
+import stickyNotesImg from '~/src/assets/Images/Kotlin/stickyNotes.png';
 
 
 function Co_Intermediate() {
@@ -52,7 +53,11 @@ function Co_Intermediate() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_WeatherApp"
                 />
 
-                <Co_Node nodeTitle="Sticky Notes" />
+                <Co_Node nodeTitle="Sticky Notes" 
+                    nodeDescription="This app is a Sticky Note app, you can pin the app widget too."
+                    nodeIconPath={stickyNotesImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_StickyNotes"
+                />
             </div>
 
         </div>
