@@ -2,6 +2,7 @@ import styles from '../../../../styles/sectionStyle/sectionStyle.module.css';
 import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
+import textCryptorImg from '~/src/assets/Images/Kotlin/textCryptor.png';
 
 
 
@@ -31,7 +32,12 @@ function Co_Advanced() {
 
             {/* nodes goes here */}
             <div className={`${styles.section_body} ${activePanel === 1 ? styles.section_body_active : ''}`}>
-                <Co_Node nodeTitle="Text Cryptor" />
+                <Co_Node nodeTitle="Text Cryptor" 
+                    nodeDescription="This app is a Text En/Decryptor."
+                    nodeIconPath={textCryptorImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_TextCryptor"
+                />
+
                 <Co_Node nodeTitle="Google Lens" />
                 <Co_Node nodeTitle="Chatbot" />
             </div>
