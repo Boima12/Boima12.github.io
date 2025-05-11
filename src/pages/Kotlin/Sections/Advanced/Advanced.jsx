@@ -38,7 +38,6 @@ function Co_Advanced() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_TextCryptor"
                 />
 
-                <Co_Node nodeTitle="Google Lens" />
                 <Co_Node nodeTitle="Chatbot" />
             </div>
 
