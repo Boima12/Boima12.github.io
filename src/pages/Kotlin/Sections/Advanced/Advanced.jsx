@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Co_Node from '../../../../myProps/Node/Node';
 import textCryptorImg from '~/src/assets/Images/Kotlin/textCryptor.png';
+import chatbotImg from '~/src/assets/Images/Kotlin/chatbot.png';
 
 
 
@@ -38,7 +39,11 @@ function Co_Advanced() {
                     nodeLink="https://github.com/Boima12/AndroidStudio_TextCryptor"
                 />
 
-                <Co_Node nodeTitle="Chatbot" />
+                <Co_Node nodeTitle="Chatbot" 
+                    nodeDescription="This app is a AI Chatbot app, featuring gemini-1.5-flash free tier model :3."
+                    nodeIconPath={chatbotImg}
+                    nodeLink="https://github.com/Boima12/AndroidStudio_Chatbot"
+                />
             </div>
 
         </div>
